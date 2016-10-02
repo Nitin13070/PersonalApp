@@ -3,10 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="courseassignment.nitin.personal.ImagesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@color/viewBg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="0.69"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/intStore"
+            android:textSize="20sp"
+            android:padding="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/internal_images"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_weight="0.69"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/extStore"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/external_images"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/save_int_btn"
+                android:layout_weight="1"
+                android:onClick="saveImage"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intStore"/>
+            <Button
+                android:id="@+id/save_ext_btn"
+                android:layout_weight="1"
+                android:onClick="saveImage"
+                android:text="@string/extStore"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 </RelativeLayout>

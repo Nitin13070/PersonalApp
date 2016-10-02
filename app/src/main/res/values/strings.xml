@@ -16,4 +16,6 @@
     <string name="submit">Submit</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="intStore">INTERNAL STORAGE</string>
+    <string name="extStore">EXTERNAL STORAGE</string>
 </resources>
